@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #6366F1;
+    --primary-glow: rgba(99, 102, 241, 0.4);
+    --bg-main: #FBFBFE;
+  }
+
+  body {
+    @apply antialiased text-slate-900 bg-[#FBFBFE];
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl;
+  }
+
+  .premium-shadow {
+    box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.05);
+  }
+
+  .mesh-bg {
+    background-color: #fbfbfe;
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(253,16%,7%,0) 0, hsla(253,16%,7%,0) 50%), 
+      radial-gradient(at 50% 0%, hsla(225,39%,30%,0) 0, hsla(225,39%,30%,0) 50%), 
+      radial-gradient(at 100% 0%, hsla(339,49%,30%,0.05) 0, hsla(339,49%,30%,0) 50%), 
+      radial-gradient(at 0% 100%, hsla(253,16%,7%,0.05) 0, hsla(253,16%,7%,0) 50%), 
+      radial-gradient(at 50% 100%, hsla(225,39%,30%,0) 0, hsla(225,39%,30%,0) 50%), 
+      radial-gradient(at 100% 100%, hsla(339,49%,30%,0) 0, hsla(339,49%,30%,0) 50%);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full hover:bg-slate-300 transition-colors;
+}

@@ -1,0 +1,61 @@
+# OSX
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Android
+.gradle/
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+.kotlin/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React / Next
+.next/
+dist/
+build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/screenshots
+fastlane/test_output
+
+# Bundle
+*.jsbundle
+
+# Pods
+Pods/
+vendor/bundle/
+
+# Metro
+.metro-health-check*
+
+# Testing
+coverage/
+
+# Yarn
+.yarn/
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
