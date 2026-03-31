@@ -1,6 +1,6 @@
 "use client";
-
 import { useEffect, useState } from "react";
+import { collection, onSnapshot } from "firebase/firestore"; // ✅ ADD THIS
 import { db } from "@/lib/firebase";
 import { 
   Search, 
